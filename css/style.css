@@ -1,0 +1,115 @@
+/* Box Model Hack */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Clear fix hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+ :root {
+    --font: "Roboto", Arial, Helvetica, sans-serif;
+    --main-grey: rgb(223, 232, 238);
+    --main-lightgrey: rgb(245, 249, 252);
+    --main-darkgrey: rgb(49, 70, 88);
+    --main-white: rgb(255, 255, 255);
+}
+
+body {
+    /* border: 2px solid lightblue; */
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+    background: var(--main-lightgrey);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background: var(--main-lightgrey);
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a {
+    background-color: var(--main-darkgrey);
+    color: var(--main-white);
+    padding: 1% 2%;
+}
+
+main {
+    clear: both;
+    color: var(--main-darkgrey);
+    background: var(--main-lightgrey);
+}
+
+.top-left {
+    float: left;
+    width: 50%;
+    padding-left: 10%;
+}
+
+.top-right {
+    float: right;
+    padding-top: 5%;
+}
+
+.top-right img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.bottom {
+    clear: both;
+}
+
+.bottom section {
+    float: left;
+    width: 25%;
+    padding: 40px;
+    background: var(--main-lightgrey);
+}
+
+.last {
+    clear: both;
+    padding: 40px;
+    background: var(--main-white);
+}
